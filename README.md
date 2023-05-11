@@ -21,7 +21,7 @@ This command builds the Docker image and tags it with the name `stdiff-image`.
 To run the Docker container, execute the following command:
 
 ```bash
-docker run --rm -v $PWD/images:/images stdiff-image "boot"
+docker run --rm -v $PWD/images:/images stdiff-image "<your image prompt>"
 ```
 
 This command runs the `stdiff` container with the `"boot"` prompt and mounts the `./images` directory in the container's `/images` directory. This is done so that the output images can be accessed on your machine.
